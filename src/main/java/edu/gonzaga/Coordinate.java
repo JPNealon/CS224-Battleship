@@ -47,16 +47,4 @@ public class Coordinate {
         return y;
     }
 
-    //mostly a pseudo code to compare coordinates for two player use. 
-    public boolean compareCoord(Coordinate coordinate){
-        if(coordinate.getX() == this.x && coordinate.getY() == this.y){
-            return true;
-        }
-        return false;
-    }
-
-    public String toString(){
-        return "\nX=" + x + " and Y=" + y;
-    }
-
 }

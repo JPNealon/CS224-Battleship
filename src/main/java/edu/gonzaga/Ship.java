@@ -3,7 +3,6 @@ package edu.gonzaga;
 import java.util.Random;
 
 public class Ship{
-
     public Integer shipSize;
     public Integer shipHealth;
     public Coordinate[] shipCoordinates;
