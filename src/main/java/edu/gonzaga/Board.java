@@ -43,6 +43,7 @@ public class Board{
                 }
                 if(carrier.direction == "horizontal"){
                     addHorizontalShipParts(x, y, boardArr, count);
+                    
                 }
                 if (battleship.direction == "vertical"){
                     addVerticalShipParts(x, y, boardArr, count);
