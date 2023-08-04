@@ -27,12 +27,12 @@ public class Coordinate {
             public void actionPerformed(ActionEvent e) {
                 if (hasShip == true){
                     System.out.println("HIT");
-                    button.setBackground(Color.RED);
+                    button.setBackground(Color.GREEN);
                     button.setEnabled(false);
                 }
                 else{
                     System.out.println("MISS");
-                    button.setBackground(Color.GREEN);
+                    button.setBackground(Color.RED);
                     button.setEnabled(false);
                 }
             }

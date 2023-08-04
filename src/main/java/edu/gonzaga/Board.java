@@ -44,7 +44,6 @@ public class Board{
                 if(carrier.direction == "horizontal"){
                     addHorizontalShipParts(x, y, boardArr, count);
                 }
-
                 if (battleship.direction == "vertical"){
                     addVerticalShipParts(x, y, boardArr, count);
                 }
@@ -72,182 +71,115 @@ public class Board{
                 if(destroyer.direction == "horizontal"){
                     addHorizontalShipParts(x, y, boardArr, count);
                 }
-
                 count++;
-               
             }
         }
-
         panel.add(buttonPanel);
-
     }
 
     private void addVerticalShipParts(int x, int y, Coordinate[] boardArr, int count){
-
         if (carrier.direction == "vertical"){
-
             for(int i = 0; i <= 4; i++){
-
                 if (carrier.initX == x && (carrier.initY + i) == y){
-    
                     carrier.shipCoordinates[i] = boardArr[count];       //add coordinate to shipCoordinates array
                     boardArr[count].hasShip = true;                     //tell coordinate it has a ship on it 
                     boardArr[count].button.setBackground(Color.blue);   //set button to blue to represent ship
-    
                 }
-    
             }
-    
         }
 
         if(battleship.direction == "vertical"){
-
             for(int i = 0; i <= 3; i++){
-
                 if (battleship.initX == x && (battleship.initY + i) == y){
-
                     battleship.shipCoordinates[i] = boardArr[count];       //add coordinate to shipCoordinates array
                     boardArr[count].hasShip = true;                     //tell coordinate it has a ship on it 
                     boardArr[count].button.setBackground(Color.blue);   //set button to blue to represent ship
-
                 }
-
             }
-
         }
 
         if(cruiser.direction == "vertical"){
-
             for(int i = 0; i <= 2; i++){
-
                 if (cruiser.initX == x && (cruiser.initY + i) == y){
-
                     cruiser.shipCoordinates[i] = boardArr[count];       //add coordinate to shipCoordinates array
                     boardArr[count].hasShip = true;                     //tell coordinate it has a ship on it 
                     boardArr[count].button.setBackground(Color.blue);   //set button to blue to represent ship
-
                 }
-
             }
-
         }
 
         if(submarine.direction == "vertical"){
-
             for(int i = 0; i <= 2; i++){
-
                 if (submarine.initX == x && (submarine.initY + i) == y){
-
                     submarine.shipCoordinates[i] = boardArr[count];       //add coordinate to shipCoordinates array
                     boardArr[count].hasShip = true;                     //tell coordinate it has a ship on it 
                     boardArr[count].button.setBackground(Color.blue);   //set button to blue to represent ship
-
                 }
-
             }
-
         }
 
         if(destroyer.direction == "vertical"){
-
             for(int i = 0; i <= 1; i++){
-
                 if (destroyer.initX == x && (destroyer.initY + i) == y){
-
                     destroyer.shipCoordinates[i] = boardArr[count];       //add coordinate to shipCoordinates array
                     boardArr[count].hasShip = true;                     //tell coordinate it has a ship on it 
                     boardArr[count].button.setBackground(Color.blue);   //set button to blue to represent ship
-
                 }
-
             }
-
         }
-
     }
 
     private void addHorizontalShipParts(int x, int y, Coordinate[] boardArr, int count){
-       
         if(carrier.direction == "horizontal"){
-
             for(int i = 0; i <= 4; i++){
-
                 if ((carrier.initX + i) == x && carrier.initY == y){
-
                     carrier.shipCoordinates[i] = boardArr[count];       //add coordinate to shipCoordinates array
                     boardArr[count].hasShip = true;                     //tell coordinate it has a ship on it 
                     boardArr[count].button.setBackground(Color.blue);   //set button to blue to represent ship
-
                 }
-
             }
-
         }
 
         if(battleship.direction == "horizontal"){
-
             for(int i = 0; i <= 3; i++){
-
                 if ((battleship.initX + i) == x && battleship.initY == y){
 
                     battleship.shipCoordinates[i] = boardArr[count];       //add coordinate to shipCoordinates array
                     boardArr[count].hasShip = true;                     //tell coordinate it has a ship on it 
                     boardArr[count].button.setBackground(Color.blue);   //set button to blue to represent ship
-
                 }
-
             }
-
         }
 
         if(cruiser.direction == "horizontal"){
-
             for(int i = 0; i <= 2; i++){
-
                 if ((cruiser.initX + i) == x && cruiser.initY == y){
-
                     cruiser.shipCoordinates[i] = boardArr[count];       //add coordinate to shipCoordinates array
                     boardArr[count].hasShip = true;                     //tell coordinate it has a ship on it 
                     boardArr[count].button.setBackground(Color.blue);   //set button to blue to represent ship
-
                 }
-
             }
-
         }
 
         if(submarine.direction == "horizontal"){
-
             for(int i = 0; i <= 2; i++){
-
                 if ((submarine.initX + i) == x && submarine.initY == y){
-
                     submarine.shipCoordinates[i] = boardArr[count];       //add coordinate to shipCoordinates array
                     boardArr[count].hasShip = true;                     //tell coordinate it has a ship on it 
                     boardArr[count].button.setBackground(Color.blue);   //set button to blue to represent ship
-
                 }
-
             }
-
         }
 
         if(destroyer.direction == "horizontal"){
-
             for(int i = 0; i <= 1; i++){
-
                 if ((destroyer.initX + i) == x && destroyer.initY == y){
-
                     destroyer.shipCoordinates[i] = boardArr[count];       //add coordinate to shipCoordinates array
                     boardArr[count].hasShip = true;                     //tell coordinate it has a ship on it 
                     boardArr[count].button.setBackground(Color.blue);   //set button to blue to represent ship
-
                 }
-
             }
-
         }
-
     }
 
     //checks to see if the player still has ships
